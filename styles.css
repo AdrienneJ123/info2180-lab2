@@ -1,0 +1,100 @@
+body {
+  font-size: 18px;
+  color: #2D3748;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  background: #63B3ED;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    padding: 20px;
+
+}
+
+header h1 {
+  font-size: 36px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+
+main {
+  grid-area: main;
+}
+
+article h2 {
+  font-size: 32px;
+  color: #48BB78;
+}
+
+.meta {
+  color: #718096;
+}
+
+.float-left {
+  float: left;
+  margin: 10px;
+  width: 40%;
+}
+
+.float-right {
+  float: right;
+  margin: 10px;
+  width: 40%;}
+
+
+aside {
+  grid-area: aside;
+}
+
+aside h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside section:nth-child(1) {
+  background: #E2E8F0;
+  padding: 10px;
+  color: #000;
+}
+
+aside section:nth-child(2) h3,
+aside section:nth-child(3) h3 {
+  color: #48BB78;
+}
+
+aside a {
+  color: #4299E1;
+  text-decoration: none;
+}
+
+footer {
+  grid-area: footer;
+  background: #2C5282;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
